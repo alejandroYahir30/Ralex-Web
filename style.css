@@ -79,6 +79,22 @@ body{
 .stat:nth-child(4){
     transition-delay:.4s;
 }
+.nav-links{
+    display:flex;
+    list-style:none;
+    gap:35px;
+
+    overflow-x:auto;
+    overflow-y:hidden;
+
+    white-space:nowrap;
+
+    scrollbar-width:none;
+}
+
+.nav-links::-webkit-scrollbar{
+    display:none;
+}
 
 /* ===================================
    HERO
@@ -359,7 +375,32 @@ body{
     }
 
 }
+@media(max-width:768px){
 
+    .navbar{
+        padding:15px 4%;
+    }
+
+    .nav-links{
+
+        flex-wrap:nowrap;
+
+        overflow-x:auto;
+
+        width:100%;
+
+        gap:25px;
+
+        margin-left:20px;
+
+        scroll-behavior:smooth;
+    }
+
+    .nav-links li{
+        flex-shrink:0;
+    }
+
+}
 
 /* ===================================
    PROCESO
