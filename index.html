@@ -12,23 +12,29 @@
 
     <!-- ================= NAVBAR ================= -->
 
-    <header>
-        <nav class="navbar">
-            <div class="logo">
-                <h2>GRUPO <span>RALEX</span></h2>
-            </div>
+ <header>
+    <nav class="navbar">
 
-            <ul class="nav-links">
-                <li><a href="#inicio">Inicio</a></li>
-                <li><a href="#nosotros">Nosotros</a></li>
-                
-                <li><a href="#cobertura">Cobertura</a></li>
-                <li><a href="#proceso">Proceso</a></li>
-                <li><a href="#contacto">Contacto</a></li>
-            </ul>
-        </nav>
-    </header>
+        <div class="logo">
+            <h2>GRUPO <span>RALEX</span></h2>
+        </div>
 
+        <!-- Botón hamburguesa -->
+        <div class="hamburger" onclick="toggleMenu()">
+            ☰
+        </div>
+
+        <!-- Links -->
+        <ul class="nav-links" id="navLinks">
+            <li><a href="#inicio">Inicio</a></li>
+            <li><a href="#nosotros">Nosotros</a></li>
+            <li><a href="#cobertura">Cobertura</a></li>
+            <li><a href="#proceso">Proceso</a></li>
+            <li><a href="#contacto">Contacto</a></li>
+        </ul>
+
+    </nav>
+</header>
     <!-- ================= HERO ================= -->
 
   <section id="inicio" class="hero">
@@ -484,5 +490,10 @@ window.addEventListener('load', startCounter);
 <a href="#inicio" class="back-to-top">
     ↑
 </a>
+<script>
+function toggleMenu() {
+    document.getElementById("navLinks").classList.toggle("active");
+}
+</script>
 </body>
 </html>
