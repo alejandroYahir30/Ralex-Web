@@ -915,3 +915,8 @@ footer p{
 
     background:#004da8;
 }
+@media (max-width: 768px) {
+    #inicio {
+        margin-top: 80px; /* ajusta este valor si quieres más o menos espacio */
+    }
+}
